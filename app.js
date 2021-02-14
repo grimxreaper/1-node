@@ -1,4 +1,4 @@
-const logger = require('./logger');
-console.log(logger);
+const log = require('./logger');
+console.log(log);
 
-logger.log('message');
+log('message');
