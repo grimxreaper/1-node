@@ -1,3 +1,4 @@
+var x =;
 var url = 'http://mylogger.io/log';
 
 function log(message) {
@@ -5,4 +6,5 @@ function log(message) {
     console.log(message)
 }
 
-module.exports = log;
+module.exports = log; //you can export a function or a single object
+
