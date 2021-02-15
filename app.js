@@ -13,3 +13,6 @@ emitter.on('messageLogged', (eventArg) => {
 //Raise an event (below)
 emitter.emit('messageLogged', { id: 1, url: 'http://' })
 
+//Raise an event called logging (data: message)
+
+emitter.emit('message', {date: message})
