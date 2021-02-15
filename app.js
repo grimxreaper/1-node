@@ -11,6 +11,11 @@ const Logger = require('./logger');
 const logger = new Logger();
 
 
+//this .on takes two arguments, the first argument is the name of the message
+//and the second one is the function or the actual listener
+//this function will be called when that message is raised
+
+
 logger.on('messageLogged', (eventArg) => {
     console.log('Listener called', eventArg)
 })
