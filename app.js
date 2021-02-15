@@ -10,9 +10,10 @@ const emitter = new EventEmitter();
 emitter.on('messageLogged', (eventArg) => {
     console.log('Listener called', eventArg)
 })
-//Raise an event (below)
-emitter.emit('messageLogged', { id: 1, url: 'http://' })
+
+const log = require('./logger');
+log('message');
 
 //Raise an event called logging (data: message)
 
-emitter.emit('message', {date: message})
+// emitter.emit('message', {date: message})
